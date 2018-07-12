@@ -1,8 +1,14 @@
 <html>
 <head>
-
+<h1>My First App<h1>
 </head>
 <body>
-<h1>My First App<h1>
+
 </body>
 </html>
+var GetManagerDetails=new Manager();
+var Name= GetManagerDetails.SetName("Satesh");
+var Address=GetManagerDetails.SetAddress("Hyderabad");
+var Desination=GetManagerDetails.SetDesig("Manager");
+var Empid=GetManagerDetails.SetEmpid(1010);
+console.log(Name+" "+Address+" "+ Desination+" "+Empid);
