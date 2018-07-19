@@ -4,16 +4,16 @@ Address:string;
 DesigNation:string;
 Empid:number;
 SetName(Name){
-return this.Name;     
+return this.Name=Name;     
 }
 SetAddress(Address){
-    return   this.Address;
+    return   this.Address=Address;
 }
 SetDesig(DesigNation){
-    return  this.DesigNation;
+    return  this.DesigNation=DesigNation;
 }
 SetEmpid(Empid){
-    return this.Empid;
+    return this.Empid=Empid;
 }
 GetName(){
   return  this.Name;
@@ -35,8 +35,8 @@ class Admin extends Employee{
 
 }
 var GetManagerDetails=new Manager();
-var Name= GetManagerDetails.Name="Sateesh";
-var Address=GetManagerDetails.Address="Hyderabad";
-var Desination=GetManagerDetails.DesigNation="Manager";
-var Empid=GetManagerDetails.Empid=1010;
+var Name= GetManagerDetails.SetName("Satesh");
+var Address=GetManagerDetails.SetAddress("Hyderabad");
+var Desination=GetManagerDetails.SetDesig("Manager");
+var Empid=GetManagerDetails.SetEmpid(1010);
 console.log(Name+" "+Address+" "+ Desination+" "+Empid);
